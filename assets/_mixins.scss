@@ -1,0 +1,10 @@
+//nel partial "buttons" genera dinamicamente le 3 classi dei bottoni a partire dalla lista dei colori corrispondenti
+
+@mixin grid($num-columns) {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 0 0 calc(100% / #{$num-columns});
+  }
+}
