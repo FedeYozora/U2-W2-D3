@@ -8,3 +8,16 @@
     flex: 0 0 calc(100% / #{$num-columns});
   }
 }
+
+@mixin fade-in($duration, $delay, $function) {
+  animation: fadeIn #{$duration} ease-in-out #{$delay};
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

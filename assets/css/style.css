@@ -1,3 +1,11 @@
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 #Logo {
   width: 70px;
   height: 44px;
@@ -58,4 +66,12 @@ img {
 }
 .container > * {
   flex: 0 0 calc(100% / 1);
+}
+
+.card {
+  animation: fadeIn 1.3s ease-in-out 0s;
+}
+
+#headline {
+  animation: fadeIn 1s ease-in-out 0s;
 }/*# sourceMappingURL=style.css.map */

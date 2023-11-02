@@ -62,3 +62,11 @@ img {
 .container {
   @include grid(1);
 }
+
+.card {
+  @include fade-in(1.3s, 0s, ease-in-out);
+}
+
+#headline {
+  @include fade-in(1s, 0s, ease-in-out);
+}
